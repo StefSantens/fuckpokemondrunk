@@ -1,0 +1,4 @@
+repository "thebest@drunkmario@cloud"
+  path "/"
+    br "/main"
+    co "/main"

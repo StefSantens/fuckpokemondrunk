@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{CD5013EC-600F-8237-D9AA-65FE7BECE22C}</ProjectGuid>
+    <ProjectGuid>{AD1FF480-EF44-706B-9AD4-FA8F34A966BD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -52,9 +52,6 @@
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.19f1</UnityVersion>
   </PropertyGroup>
-  <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Mechanics\SpawnPoint.cs" />
     <Compile Include="Assets\Scripts\Gameplay\PlayerEnemyCollision.cs" />
@@ -99,6 +96,8 @@
     <Compile Include="Assets\Scripts\UI\MetaGameController.cs" />
     <Compile Include="Assets\Scripts\Core\Simulation.InstanceRegister.cs" />
     <Compile Include="Assets\Scripts\Gameplay\HealthIsZero.cs" />
+    <Compile Include="Assets\Scripts\Pickup\BeerController.cs" />
+    <Compile Include="Assets\Scripts\UI\ScoreScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
@@ -803,11 +802,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.2DPlatformer.Tutorials.csproj">
-      <Project>{8DF09CED-E71A-2404-DB6A-DC6D431EF05C}</Project>
+      <Project>{41EAC56F-DC95-A338-5E7C-ECB0D8E13B83}</Project>
       <Name>Unity.2DPlatformer.Tutorials</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Platformer.Tutorials.csproj">
-      <Project>{9A2F82F8-EEAA-053A-1DEB-DD6E63833A3C}</Project>
+      <Project>{E78287D7-B55F-9E1C-9E31-41B8AA7C345E}</Project>
       <Name>Unity.Platformer.Tutorials</Name>
     </ProjectReference>
   </ItemGroup>

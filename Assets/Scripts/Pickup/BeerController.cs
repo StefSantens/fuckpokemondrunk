@@ -9,8 +9,10 @@ public class BeerController : MonoBehaviour
         if (collision.tag == "player")
         {
             ScoreScript.scoreValue++;
-            Destroy(gameObject);
-
+            Debug.Log(gameObject);
+            if (gameObject.tag != "Collidable")
+            gameObject.SetActive(false);
+            // Destroy(gameObject);
         }
     }
 }
